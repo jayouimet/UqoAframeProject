@@ -3,7 +3,8 @@ import Camera from './assets/Camera';
 import RedBlueBox from './assets/RedBlueBox';
 
 function App() {
-  const handleClick = () => {
+  const handleClick = (e) => {
+    console.log("Target", e.target);
     console.log("Clicked");
   }
 
