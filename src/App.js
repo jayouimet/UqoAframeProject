@@ -1,5 +1,6 @@
 import './App.css';
 import Camera from './components/assets/Camera';
+import ShelfOfPaint from './components/objects/ShelfOfPaint';
 import WorkDesk from './components/objects/WorkDesk';
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
         shadow: true;
         "></a-entity>
       <Camera/>
-      <WorkDesk position={"0 0 -5"}/>
+      <ShelfOfPaint position={"0 0 -5"}/>
+      <WorkDesk position={"0 0 -10"}/>
     </a-scene>
   );
 }
