@@ -1,6 +1,5 @@
 import './App.css';
 import Camera from './components/assets/Camera';
-import ComputerChair from './components/assets/ComputerChair';
 import WorkDesk from './components/objects/WorkDesk';
 
 function App() {
@@ -16,8 +15,7 @@ function App() {
         shadow: true;
         "></a-entity>
       <Camera/>
-      <WorkDesk position={"0 0.4 -5"}/>
-      <ComputerChair position={"0 0 -4"}/>
+      <WorkDesk position={"0 0 -5"}/>
     </a-scene>
   );
 }
