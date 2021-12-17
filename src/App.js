@@ -1,17 +1,23 @@
 import './App.css';
-import Camera from './assets/Camera';
-import RedBlueBox from './assets/RedBlueBox';
+import Camera from './components/assets/Camera';
+import ComputerChair from './components/assets/ComputerChair';
+import WorkDesk from './components/objects/WorkDesk';
 
 function App() {
-  const handleClick = (e) => {
-    console.log("Target", e.target);
-    console.log("Clicked");
-  }
-
   return (
     <a-scene>
+      <a-entity position={"0 0 0"} scale={"2 1 2"} environment="
+        playArea: 1;
+        preset: forest; 
+        groundColor: #445; 
+        fog: 0.95; 
+        ground: flat; 
+        groundTexture: walkernoise; 
+        shadow: true;
+        "></a-entity>
       <Camera/>
-      <RedBlueBox onClick={handleClick} width="2" depth="3" height="1" position="0 0 -5"/>
+      <WorkDesk position={"0 0.4 -5"}/>
+      <ComputerChair position={"0 0 -4"}/>
     </a-scene>
   );
 }
