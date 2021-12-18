@@ -1,5 +1,6 @@
 import React from 'react';
 import GarageShelf from '../assets/GarageShelf';
+import Screwdriver from '../assets/Screwdriver';
 import SprayPaint from '../assets/SprayPaint';
 
 const ShelfOfPaint = (props) => {
@@ -39,6 +40,8 @@ const ShelfOfPaint = (props) => {
             <SprayPaint color="green" position={"-1.2 0.05 0.2"}/>
             <SprayPaint color="black" position={"-0.8 0.05 -0.3"}/>
             <SprayPaint color="gray" position={"0.3 0.05 0"}/>
+
+            <Screwdriver position={"0.3 1.07 0.3"}/>
         </a-entity>
     );
 };
