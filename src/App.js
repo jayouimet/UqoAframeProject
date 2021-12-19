@@ -9,6 +9,7 @@ import FloorTexture from "./textures/floor.jpg";
 import WallTexture from "./textures/wall.jpg";
 import CeilingTexture from "./textures/ceiling.jpg";
 import RoofTexture from "./textures/roof.png";
+import BlindsTexture from "./textures/blinds.jpg";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <img width="1" height="1" src={WallTexture} id="wall" alt="wall"/>
         <img width="1" height="1" src={CeilingTexture} id="ceiling" alt="ceiling"/>
         <img width="1" height="1" src={RoofTexture} id="roof" alt="roof"/>
+        <img width="1" height="1" src={BlindsTexture} id="blinds" alt="blinds"/>
       </a-assets>
       
       <a-entity position={"0 0 0"} scale={"2 1 2"} environment="

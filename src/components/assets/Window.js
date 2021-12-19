@@ -39,7 +39,7 @@ const Window = ({ wallWidth, wallHeight, windowWidth, windowHeight, position, ro
             <a-entity position={`0 0 0`}>
                 <a-box opacity="0.4" color="black" depth={depth} width={windowWidth} height={windowHeight}></a-box>
                 <a-entity position={`0 0 -${depth/2 + 0.03}`} height={windowHeight+0.5} width={windowWidth}>
-                    <a-plane curtain-component color="darkslategray" position="0 0 0" side="double" height={windowHeight+0.5} width={windowWidth}></a-plane>
+                    <a-plane src="#blinds" curtain-component position="0 0 0" side="double" height={windowHeight+0.5} width={windowWidth}></a-plane>
                 </a-entity>
             </a-entity>
             {/* Door */}
