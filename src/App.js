@@ -14,7 +14,6 @@ import GarbageBin from './components/assets/GarbageBin';
 import Cactus from './components/assets/Cactus';
 import Freezer from './components/assets/Freezer';
 import Oven from './components/assets/Oven';
-import KitchenCounter from './components/assets/KitchenCounter';
 import KitchenSink from './components/assets/KitchenSink';
 import counterWood from './textures/counterWood.jpg';
 import kitchenTableWood from './textures/kitchenTableWood.jpg';
@@ -56,7 +55,6 @@ function App() {
       <Cactus position={"0 0 -6"}/>
       <Freezer position={"0 0 -4"}/>
       <Oven position={"0 0 -2"}/>
-      <KitchenCounter position={"0 0 0"}/>
       <KitchenSink position={"2 0 0"}/>
       <KitchenTable position={"2 0 -6"}/>
       <KitchenChair position={"2 0 -4"}/>

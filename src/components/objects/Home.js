@@ -2,11 +2,17 @@ import React from 'react';
 import Walls from '../assets/Walls';
 import Roof from '../assets/Roof';
 import LightController from '../objects/LightController';
+import TV from '../assets/TV';
+import KitchenCounter from '../assets/KitchenCounter';
 
 const Home = (props) => {
     return (
         <a-entity {...props}>
             <Walls/>
+            <TV position="10 -0.1 19" rotation="0 180 0"/>
+            <KitchenCounter position="11 -2 19" rotation="0 180 0" color="black"/>
+            <KitchenCounter position="10 -2 19" rotation="0 180 0" color="black"/>
+            <KitchenCounter position="9 -2 19" rotation="0 180 0" color="black"/>
             <LightController groupName={"cook"} position="0 1.99 10" buttonPos="19.9 0 1.5" rotation="0 -90 0"/>
             <LightController groupName={"cook"} position="0 1.99 -10" buttonOff="true"/>
             <LightController groupName={"cook"} position="10 1.99 0" buttonOff="true"/>
