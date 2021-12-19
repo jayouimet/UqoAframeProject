@@ -10,6 +10,10 @@ import WallTexture from "./textures/wall.jpg";
 import CeilingTexture from "./textures/ceiling.jpg";
 import RoofTexture from "./textures/roof.png";
 import BlindsTexture from "./textures/blinds.jpg";
+import GarbageBin from './components/assets/GarbageBin';
+import Cactus from './components/assets/Cactus';
+import Freezer from './components/assets/Freezer';
+import Oven from './components/assets/Oven';
 
 function App() {
   return (
@@ -37,6 +41,10 @@ function App() {
       <Camera/>
       <ShelfOfPaint position={"0 0 -12"}/>
       <WorkDesk position={"0 0 -10"}/>
+      <GarbageBin position={"0 0 -8"}/>
+      <Cactus position={"0 0 -6"}/>
+      <Freezer position={"0 0 -4"}/>
+      <Oven position={"0 0 -2"}/>
       <Home position={"0 2 0"}/>
     </a-scene>
   );
