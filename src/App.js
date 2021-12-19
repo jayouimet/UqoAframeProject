@@ -14,6 +14,8 @@ import GarbageBin from './components/assets/GarbageBin';
 import Cactus from './components/assets/Cactus';
 import Freezer from './components/assets/Freezer';
 import Oven from './components/assets/Oven';
+import KitchenCounter from './components/assets/KitchenCounter';
+import counterWood from './textures/counterWood.jpg';
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
         <img width="1" height="1" src={CeilingTexture} id="ceiling" alt="ceiling"/>
         <img width="1" height="1" src={RoofTexture} id="roof" alt="roof"/>
         <img width="1" height="1" src={BlindsTexture} id="blinds" alt="blinds"/>
+        <img src={counterWood} id="counterWood" alt="counterWood"/>
       </a-assets>
       
       <a-entity position={"0 0 0"} scale={"2 1 2"} environment="
@@ -45,6 +48,7 @@ function App() {
       <Cactus position={"0 0 -6"}/>
       <Freezer position={"0 0 -4"}/>
       <Oven position={"0 0 -2"}/>
+      <KitchenCounter position={"0 0 0"}/>
       <Home position={"0 2 0"}/>
     </a-scene>
   );
