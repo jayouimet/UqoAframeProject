@@ -1,26 +1,28 @@
 import React from 'react';
 
-window.AFRAME.registerComponent('counter-component', {
-    schema: { duration: { default: 2 } },
-    init: function () {
-        this.isDoorOpened = false;
-        this.done = true;
-        this.el.addEventListener('click', this.OnDoorClick.bind(this));
-    },
-    OnDoorClick: function (event) {
-        if (!this.done) return;
-        
-        this.done = false;
-        let obj = this;
-        this.el.setAttribute("animation", `property:rotation;from:0 ${90 * (this.isDoorOpened)} 0;to:0 ${90 * (!this.isDoorOpened)} 0;dur:${this.nextData.duration * 1000};easing:linear;`);
+if (!window.AFRAME.components["counter-component"]) {
+    window.AFRAME.registerComponent('counter-component', {
+        schema: { duration: { default: 2 } },
+        init: function () {
+            this.isDoorOpened = false;
+            this.done = true;
+            this.el.addEventListener('click', this.OnDoorClick.bind(this));
+        },
+        OnDoorClick: function (event) {
+            if (!this.done) return;
+            
+            this.done = false;
+            let obj = this;
+            this.el.setAttribute("animation", `property:rotation;from:0 ${90 * (this.isDoorOpened)} 0;to:0 ${90 * (!this.isDoorOpened)} 0;dur:${this.nextData.duration * 1000};easing:linear;`);
 
-        setTimeout(function () {
-            obj.done = true;
-        }, this.nextData.duration * 1000);
+            setTimeout(function () {
+                obj.done = true;
+            }, this.nextData.duration * 1000);
 
-        this.isDoorOpened = !this.isDoorOpened;
-    }
-});
+            this.isDoorOpened = !this.isDoorOpened;
+        }
+    });
+}
 
 const KitchenCounter = (props) => {
     return (

@@ -15,6 +15,7 @@ import Cactus from './components/assets/Cactus';
 import Freezer from './components/assets/Freezer';
 import Oven from './components/assets/Oven';
 import KitchenCounter from './components/assets/KitchenCounter';
+import KitchenSink from './components/assets/KitchenSink';
 import counterWood from './textures/counterWood.jpg';
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
       <Freezer position={"0 0 -4"}/>
       <Oven position={"0 0 -2"}/>
       <KitchenCounter position={"0 0 0"}/>
+      <KitchenSink position={"2 0 0"}/>
       <Home position={"0 2 0"}/>
     </a-scene>
   );
