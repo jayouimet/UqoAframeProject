@@ -24,7 +24,7 @@ if (!window.AFRAME.components["kitchen-sink-component"]) {
     });
 }
 
-const KitchenSink = (props) => {
+const KitchenSink = ({color, ...props}) => {
     return (
         <a-entity {...props}>
             <a-box position="-0.5 0.45 0" src="#counterWood" width="0.05" height="0.9" depth="0.8"></a-box>
@@ -65,10 +65,10 @@ const KitchenSink = (props) => {
                 <a-sphere position="-0.85 0 0.05" color="#EEEEEE" radius="0.02"></a-sphere>
             </a-entity>
 
-            <a-box position="-0.45 0.925 0.025" color="#EEEEEE" width="0.2" height="0.05" depth="0.85"></a-box>
-            <a-box position="0.45 0.925 0.025" color="#EEEEEE" width="0.2" height="0.05" depth="0.85"></a-box>
-            <a-box position="0 0.925 0.375" color="#EEEEEE" width="1.1" height="0.05" depth="0.15"></a-box>
-            <a-box position="0 0.925 -0.325" color="#EEEEEE" width="1.1" height="0.05" depth="0.15"></a-box>
+            <a-box position="-0.45 0.925 0.025" color={color ? color : "#EEEEEE"} width="0.2" height="0.05" depth="0.85"></a-box>
+            <a-box position="0.45 0.925 0.025" color={color ? color : "#EEEEEE"} width="0.2" height="0.05" depth="0.85"></a-box>
+            <a-box position="0 0.925 0.375" color={color ? color : "#EEEEEE"} width="1.1" height="0.05" depth="0.15"></a-box>
+            <a-box position="0 0.925 -0.325" color={color ? color : "#EEEEEE"} width="1.1" height="0.05" depth="0.15"></a-box>
         </a-entity>
     );
 };

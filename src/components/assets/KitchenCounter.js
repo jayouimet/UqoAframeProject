@@ -24,7 +24,7 @@ if (!window.AFRAME.components["counter-component"]) {
     });
 }
 
-const KitchenCounter = ({color,...props}) => {
+const KitchenCounter = ({color, ...props}) => {
     return (
         <a-entity {...props}>
             <a-box position="-0.5 0.45 0" src="#counterWood" width="0.05" height="0.9" depth="0.8"></a-box>
@@ -39,7 +39,7 @@ const KitchenCounter = ({color,...props}) => {
                 <a-sphere position="-0.85 0 0.05" color="#EEEEEE" radius="0.02"></a-sphere>
             </a-entity>
 
-            <a-box position="0 0.925 0.025" color={color} width="1.1" height="0.05" depth="0.85"></a-box>
+            <a-box position="0 0.925 0.025" color={color ? color : "#EEEEEE"} width="1.1" height="0.05" depth="0.85"></a-box>
         </a-entity>
     );
 };
