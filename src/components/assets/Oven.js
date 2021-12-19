@@ -3,9 +3,6 @@ import React from 'react';
 const Oven = (props) => {
     return(
         <a-entity {...props}>
-
-
-
             <a-box height="0.3" depth="1" width="1.2" position="0 0.17 0" color="#C0C0C0"></a-box>
             <a-box height="0.01" depth="0.99" width="1.19" position="0 0.325 0" color="black"></a-box>
             <a-box height="0.01" depth="0.99" width="1.2" position="0 0.325 -0.005" color="#C0C0C0"></a-box>

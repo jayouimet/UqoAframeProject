@@ -17,6 +17,9 @@ import Oven from './components/assets/Oven';
 import KitchenCounter from './components/assets/KitchenCounter';
 import KitchenSink from './components/assets/KitchenSink';
 import counterWood from './textures/counterWood.jpg';
+import kitchenTableWood from './textures/kitchenTableWood.jpg';
+import KitchenTable from './components/assets/KitchenTable';
+import KitchenChair from './components/assets/KitchenChair';
 
 function App() {
   return (
@@ -30,6 +33,7 @@ function App() {
         <img width="1" height="1" src={RoofTexture} id="roof" alt="roof"/>
         <img width="1" height="1" src={BlindsTexture} id="blinds" alt="blinds"/>
         <img src={counterWood} id="counterWood" alt="counterWood"/>
+        <img src={kitchenTableWood} id="kitchenTableWood" alt="kitchenTableWood"/>
       </a-assets>
       
       <a-entity position={"0 0 0"} scale={"2 1 2"} environment="
@@ -51,6 +55,8 @@ function App() {
       <Oven position={"0 0 -2"}/>
       <KitchenCounter position={"0 0 0"}/>
       <KitchenSink position={"2 0 0"}/>
+      <KitchenTable position={"2 0 -6"}/>
+      <KitchenChair position={"2 0 -4"}/>
       <Home position={"0 2 0"}/>
     </a-scene>
   );
