@@ -7,12 +7,12 @@ window.AFRAME.registerComponent('curtain-component', {
         this.isCurtainOpened = true;
         this.done = true;
         this.height = this.el.getAttribute("height");
-        this.el.addEventListener('click', this.OnDoorClick.bind(this));
+        this.el.addEventListener('click', this.OnCurtainClick.bind(this));
         this.el.setAttribute("animation", `property:height;from:${(this.isCurtainOpened ? this.height : 0.5)};to:${(!this.isCurtainOpened ? this.height : 0.5)};dur:1;easing:linear;`);
         this.el.setAttribute("animation__2", `property:position;from:0 ${(!this.isCurtainOpened ? this.height/2 - 0.25 : 0)} 0;to:0 ${(this.isCurtainOpened ? this.height/2 - 0.25 : 0)} 0;dur:1;easing:linear;`);
         this.isCurtainOpened = false;
     },
-    OnDoorClick: function (event) {
+    OnCurtainClick: function (event) {
         if (!this.done) return;
         
         this.done = false;

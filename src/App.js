@@ -13,7 +13,7 @@ import RoofTexture from "./textures/roof.png";
 function App() {
   return (
     <a-scene>
-      <a-assets>
+      <a-assets defaultLightning="false">
         <img src={DoorTexture} id="door" alt="door"/>
         <img src={Door1Texture} id="door1" alt="door1"/>
         <img width="1" height="1" src={FloorTexture} id="floor" alt="floor"/>
@@ -21,15 +21,16 @@ function App() {
         <img width="1" height="1" src={CeilingTexture} id="ceiling" alt="ceiling"/>
         <img width="1" height="1" src={RoofTexture} id="roof" alt="roof"/>
       </a-assets>
+      
       <a-entity position={"0 0 0"} scale={"2 1 2"} environment="
         playArea: 1;
         preset: forest; 
         groundColor: #445; 
-        fog: 0.85; 
         ground: flat; 
         groundTexture: walkernoise; 
         shadow: true;
         lightPosition:0 15 0;
+        flatShading:true;
         "></a-entity>
       <Camera/>
       <ShelfOfPaint position={"0 0 -12"}/>
