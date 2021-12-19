@@ -19,8 +19,8 @@ import counterWood from './textures/counterWood.jpg';
 
 function App() {
   return (
-    <a-scene>
-      <a-assets defaultLightning="false">
+    <a-scene defaultLightning="false">
+      <a-assets>
         <img src={DoorTexture} id="door" alt="door"/>
         <img src={Door1Texture} id="door1" alt="door1"/>
         <img width="1" height="1" src={FloorTexture} id="floor" alt="floor"/>

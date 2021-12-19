@@ -1,7 +1,8 @@
 import React from 'react';
+import CactusThorns from './CactusThorns';
 
 const Cactus = (props) => {
-    return(
+    return (
         <a-entity {...props}>
             <a-box height="0.3" depth="0.05" width="0.35" position="0 0.15 0.15" color="#6E1005"></a-box>
             <a-box height="0.3" depth="0.05" width="0.35" position="0 0.15 -0.15" color="#6E1005"></a-box>
@@ -21,6 +22,42 @@ const Cactus = (props) => {
             <a-sphere position="0.2 0.4 0" radius="0.04" color="darkgreen"></a-sphere>
             <a-cylinder position="0.2 0.5 0" height="0.2" radius="0.04" color="darkgreen"></a-cylinder>
             <a-sphere position="0.2 0.6 0" radius="0.04" color="darkgreen"></a-sphere>
+
+            <CactusThorns position="0 0.5 0.07" />
+            <CactusThorns position="0 0.7 0.07" />
+            <CactusThorns position="0 0.3 0.07" />
+            <CactusThorns position="-0.15 0.5 0.05" />
+            <CactusThorns position="-0.1 0.5 0.05" />
+            <CactusThorns position="-0.05 0.5 0.05" />
+            <CactusThorns position="-0.2 0.5 0.05" />
+            <CactusThorns position="-0.2 0.6 0.05" />
+            <CactusThorns position="-0.2 0.7 0.05" />
+
+            <CactusThorns position="0 0.4 0.07" />
+            <CactusThorns position="0.1 0.4 0.05" />
+            <CactusThorns position="0.05 0.4 0.05" />
+            <CactusThorns position="0.15 0.4 0.05" />
+            <CactusThorns position="0.2 0.4 0.05" />
+            <CactusThorns position="0.2 0.5 0.05" />
+            <CactusThorns position="0.2 0.6 0.05" />
+
+            <CactusThorns position="0 0.5 -0.07" rotation="0 180 0"/>
+            <CactusThorns position="0 0.7 -0.07" rotation="0 180 0" />
+            <CactusThorns position="0 0.3 -0.07" rotation="0 180 0" />
+            <CactusThorns position="-0.15 0.5 -0.05" rotation="0 180 0" />
+            <CactusThorns position="-0.1 0.5 -0.05" rotation="0 180 0" />
+            <CactusThorns position="-0.05 0.5 -0.05" rotation="0 180 0" />
+            <CactusThorns position="-0.2 0.5 -0.05" rotation="0 180 0" />
+            <CactusThorns position="-0.2 0.6 -0.05" rotation="0 180 0" />
+            <CactusThorns position="-0.2 0.7 -0.05" rotation="0 180 0" />
+
+            <CactusThorns position="0 0.4 -0.07" rotation="0 180 0" />
+            <CactusThorns position="0.1 0.4 -0.05" rotation="0 180 0" />
+            <CactusThorns position="0.05 0.4 -0.05" rotation="0 180 0" />
+            <CactusThorns position="0.15 0.4 -0.05" rotation="0 180 0" />
+            <CactusThorns position="0.2 0.4 -0.05" rotation="0 180 0" />
+            <CactusThorns position="0.2 0.5 -0.05" rotation="0 180 0" />
+            <CactusThorns position="0.2 0.6 -0.05" rotation="0 180 0" />
         </a-entity>
     );
 };
