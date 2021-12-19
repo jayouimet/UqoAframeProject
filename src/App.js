@@ -20,6 +20,8 @@ import counterWood from './textures/counterWood.jpg';
 import kitchenTableWood from './textures/kitchenTableWood.jpg';
 import KitchenTable from './components/assets/KitchenTable';
 import KitchenChair from './components/assets/KitchenChair';
+import BlackRubberMat from './components/assets/BlackRubberMat';
+import blackRubberMat from './textures/blackRubberMat.jpg';
 
 function App() {
   return (
@@ -34,6 +36,7 @@ function App() {
         <img width="1" height="1" src={BlindsTexture} id="blinds" alt="blinds"/>
         <img src={counterWood} id="counterWood" alt="counterWood"/>
         <img src={kitchenTableWood} id="kitchenTableWood" alt="kitchenTableWood"/>
+        <img src={blackRubberMat} id="blackRubberMat" alt="blackRubberMat"/>
       </a-assets>
       
       <a-entity position={"0 0 0"} scale={"2 1 2"} environment="
@@ -57,6 +60,7 @@ function App() {
       <KitchenSink position={"2 0 0"}/>
       <KitchenTable position={"2 0 -6"}/>
       <KitchenChair position={"2 0 -4"}/>
+      <BlackRubberMat position={"2 0 -2"}/>
       <Home position={"0 2 0"}/>
     </a-scene>
   );
