@@ -32,8 +32,6 @@
     <script>
       window.onload = () => {
         setTimeout(() => {
-            document.querySelector('#camera').setAttribute('look-controls', '');
-            document.querySelector('#camera').setAttribute('wasd-controls', "acceleration: 100");
             let staticBodies = document.querySelectorAll('a-box,a-sphere,a-cylinder,a-cone');
             [].forEach.call(staticBodies, function(staticBody) {
               staticBody.setAttribute('static-body', '');
@@ -42,6 +40,9 @@
             [].forEach.call(staticBodies, function(staticBody) {
               staticBody.setAttribute('static-body', '');
             });
+            document.querySelector('#camera').setAttribute('look-controls', '');
+            document.querySelector('#camera').setAttribute('wasd-controls', "acceleration: 100");
+            document.querySelector('#loadingText').setAttribute("visible",false);
           }, 
           5000
         );
@@ -68,6 +69,7 @@
         <img src='textures/sofa.png' id="sofa" alt="sofa"></img>
         <video id="tv" src="tv.mp4" autoplay="true" onloadstart="this.volume=0.005" loop="true"></video>
       </a-assets>
+      <a-text id="loadingText" position="0 3.2 -2" align="center" value="Loading..."></a-text>
       <a-entity position="0 3.2 0">
         <a-entity kinematic-body id="camera" camera="active: true">
           <a-cursor></a-cursor>
