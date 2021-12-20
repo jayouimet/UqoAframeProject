@@ -23,7 +23,7 @@ pour l'installer pour le projet uniquement.
 ## Démarrer le projet
 
 Pour démarrer le projet, il faut commencer par installer les dépendences Node.js
-### `yarn`
+### Entrez la commande `yarn`
 
 Ensuite, on peut démarrer le projet sur https://localhost:3000
-### `yarn start`
+### Entrez la commande `yarn start`
