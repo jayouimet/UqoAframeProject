@@ -2,6 +2,7 @@ import React from 'react';
 import Rooms from '../Rooms/Rooms';
 import Roof from '../assets/Roof';
 import LightController from '../objects/LightController';
+import CeilingFan from '../assets/CeilingFan';
 
 const Home = (props) => {
     return (
@@ -16,6 +17,8 @@ const Home = (props) => {
             <LightController groupName={"bath"} position="-25 1.99 0" buttonPos="-20.1 0 -1.5" rotation="0 -90 0"/>
             <LightController groupName={"garage"} position="13 1.99 -13" buttonPos="15 0 -6.1" rotation="0 180 0"/>
             <LightController groupName={"entrance"} position="23 1.99 0" buttonOff="true"/>
+
+            <CeilingFan scale="1.8 1.8 1.8" position={"0 2 0"}/>
 
             {/* Floor */}
             <a-plane class="static-body" roughness="1" width="40" height="40" src="#floor" repeat="20 20" rotation="-90 0 0" position="0 -1.99 0"></a-plane>

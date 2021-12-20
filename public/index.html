@@ -33,7 +33,7 @@
       window.onload = () => {
         setTimeout(() => {
             document.querySelector('#camera').setAttribute('look-controls', '');
-            document.querySelector('#camera').setAttribute('wasd-controls', "acceleration: 200");
+            document.querySelector('#camera').setAttribute('wasd-controls', "acceleration: 100");
             let staticBodies = document.querySelectorAll('a-box,a-sphere,a-cylinder,a-cone');
             [].forEach.call(staticBodies, function(staticBody) {
               staticBody.setAttribute('static-body', '');
@@ -64,6 +64,7 @@
         <img src='textures/counterWood.jpg' id="counterWood" alt="counterWood" ></img>
         <img src='textures/kitchenTableWood.jpg' id="kitchenTableWood" alt="kitchenTableWood" ></img>
         <img src='textures/blackRubberMat.jpg' id="blackRubberMat" alt="blackRubberMat" ></img>
+        <img src='textures/matTexture.jpg' id="matTexture" alt="matTexture" ></img>
         <img src='textures/sofa.png' id="sofa" alt="sofa"></img>
         <video id="tv" src="tv.mp4" autoplay="true" onloadstart="this.volume=0.005" loop="true"></video>
       </a-assets>

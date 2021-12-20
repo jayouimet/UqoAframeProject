@@ -1,6 +1,8 @@
 import React from 'react';
 import Wall from '../assets/Wall';
 import Window from '../assets/Window';
+import Mat from '../assets/Mat';
+import TelevisionTable from '../assets/TelevisionTable';
 
 const LivingRoom = (props) => {
     return (
@@ -11,6 +13,8 @@ const LivingRoom = (props) => {
             <Window position={"-5 0 20"} wallWidth={10} wallHeight={4} windowHeight={1.6} windowWidth={3} depth={0.2}/>
             <Window position={"5 0 20"} wallWidth={10} wallHeight={4} windowHeight={1.6} windowWidth={3} depth={0.2}/>
             <Window position={"15 0 20"} wallWidth={10} wallHeight={4} windowHeight={1.6} windowWidth={3} depth={0.2}/>
+            <Mat position={"10 -2 15.5"}/>
+            <TelevisionTable position={"10 -2.25 15.5"}/>
         </a-entity>
     );
 };
