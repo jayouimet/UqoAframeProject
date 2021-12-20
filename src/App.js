@@ -1,11 +1,6 @@
 import './App.css';
 import Camera from './components/assets/Camera';
 import Home from './components/objects/Home';
-import Cactus from './components/assets/Cactus';
-import Freezer from './components/assets/Freezer';
-import Oven from './components/assets/Oven';
-import KitchenSink from './components/assets/KitchenSink';
-import BlackRubberMat from './components/assets/BlackRubberMat';
 
 function App() {
   return (
@@ -21,11 +16,6 @@ function App() {
         flatShading:true;
         "></a-entity>
       <Camera />
-      <Cactus position={"0 0 -6"} />
-      <Freezer position={"0 0 -4"} />
-      <Oven position={"0 0 -2"} />
-      <KitchenSink position={"2 0 0"} />
-      <BlackRubberMat position={"2 0 -2"} />
       <Home position={"0 2 0"} />
     </a-entity>
   );

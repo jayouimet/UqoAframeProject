@@ -15,10 +15,31 @@ import Oven from '../assets/Oven';
 import GarbageBin from '../assets/GarbageBin';
 import KitchenTable from '../assets/KitchenTable';
 import KitchenChair from '../assets/KitchenChair';
+import Cactus from '../assets/Cactus';
+import TV from '../assets/TV';
+import Sofa from '../assets/Sofa';
+import TelevisionTable from '../assets/TelevisionTable';
 
 const Rooms = (props) => {
     return (
         <a-entity {...props}>
+            <TV position="10 -0.1 19" rotation="0 180 0"/>
+            <KitchenCounter position="11 -2 19" rotation="0 180 0" color="black"/>
+            <KitchenCounter position="10 -2 19" rotation="0 180 0" color="black"/>
+            <KitchenCounter position="9 -2 19" rotation="0 180 0" color="black"/>
+
+            <a-entity position="0 -2 0">
+                <Sofa rotation="0 -20 0" position="12 0 12"/>
+                <Sofa rotation="0 20 0" position="8 0 12"/>
+                <TelevisionTable rotation="0 90 0" position="19.2 0 13">
+                    <Cactus position="0 1 0"/>
+                </TelevisionTable>
+            </a-entity>
+
+            <a-entity position="0 -2 0">
+                <Cactus scale="4 4 4" rotation="0 135 0" position="-8.5 0 18.5"/>
+            </a-entity>
+
             {/* External Walls */}
             <Wall width="15" depth="0.2" height="4" rotation="0 90 0" position="-20 0 12.5" />
             <Wall width="15" depth="0.2" height="4" rotation="0 90 0" position="-20 0 -12.5" />
@@ -71,8 +92,12 @@ const Rooms = (props) => {
             </a-entity>
 
             <a-entity scale={"1.3 1.3 1.3"} position={"-1.8 -2 -10"}>
-                <KitchenTable position={"-1.655 0 0"}/>
-                <KitchenTable position={"1.655 0 0"}/>
+                <KitchenTable position={"-1.655 0 0"}>
+                    <Cactus position={"0 1 0"}/>
+                </KitchenTable>
+                <KitchenTable position={"1.655 0 0"}>
+                    <Cactus position={"0 1 0"}/>
+                </KitchenTable>
                 
                 <a-entity rotation={"0 180 0"}>
                     <KitchenChair position={"0.8275 0 0.7"}/>
