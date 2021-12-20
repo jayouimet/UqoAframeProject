@@ -2,7 +2,7 @@ import React from 'react';
 
 const GarbageBin = (props) => {
     return(
-        <a-entity {...props}>
+        <a-entity class="static-body" {...props}>
             <a-cone position="0 0.4 0" radius-top="0.4" radius-bottom="0.3" height=".8" color="#7E7E7E"></a-cone>
             <a-cone position="0 0.825 0" radius-top="0.4" radius-bottom="0.42" height=".05" color="#7E7E7E"></a-cone>
             <a-cone position="0 0.865 0" radius-top="0.3" radius-bottom="0.4" height=".03" color="#7E7E7E"></a-cone>

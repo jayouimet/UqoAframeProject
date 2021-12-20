@@ -1,5 +1,4 @@
 import './App.css';
-import Camera from './components/assets/Camera';
 import Home from './components/objects/Home';
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
         lightPosition:0 15 0;
         flatShading:true;
         "></a-entity>
-      <Camera />
       <Home position={"0 2 0"} />
     </a-entity>
   );

@@ -37,7 +37,7 @@ const Window = ({ wallWidth, wallHeight, windowWidth, windowHeight, position, ro
             <Wall depth={depth} width={(wallWidth - windowWidth) / 2} height={wallHeight} position={`-${(wallWidth + windowWidth) / 4} 0 0`} />
             
             <a-entity position={`0 0 0`}>
-                <a-box opacity="0.4" color="black" depth={depth} width={windowWidth} height={windowHeight}></a-box>
+                <a-box class="static-body" opacity="0.4" color="black" depth={depth} width={windowWidth} height={windowHeight}></a-box>
                 <a-entity position={`0 0 -${depth/2 + 0.03}`} height={windowHeight+0.5} width={windowWidth}>
                     <a-plane src="#blinds" curtain-component position="0 0 0" side="double" height={windowHeight+0.5} width={windowWidth}></a-plane>
                 </a-entity>

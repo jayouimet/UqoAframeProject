@@ -32,10 +32,10 @@ const Door = ({ wallWidth, wallHeight, doorWidth, doorHeight, position, rotation
             <Wall depth={depth} width={(wallWidth - doorWidth) / 2} height={wallHeight} position={`-${(wallWidth + doorWidth) / 4} 0 0`} />
             <a-entity position={`-${doorWidth/2} ${(doorHeight - wallHeight) / 2} 0`}>
                 <a-entity door-component>
-                    <a-plane roughness="1" src="#door" height={doorHeight} width={doorWidth} position={`${doorWidth/2} 0 ${depth/2}`}></a-plane>
-                    <a-plane roughness="1" src="#door1" height={doorHeight} width={doorWidth} position={`${doorWidth/2} 0 -${depth/2}`} rotation="0 180 0"></a-plane>
-                    <a-plane color="black" width={depth} height={doorHeight} rotation="0 90 0" position={`${doorWidth} 0 0`}></a-plane>
-                    <a-plane color="black" width={depth} height={doorHeight} rotation="0 -90 0" position={`0 0 0`}></a-plane>
+                    <a-plane class="static-body" roughness="1" src="#door" height={doorHeight} width={doorWidth} position={`${doorWidth/2} 0 ${depth/2}`}></a-plane>
+                    <a-plane class="static-body" roughness="1" src="#door1" height={doorHeight} width={doorWidth} position={`${doorWidth/2} 0 -${depth/2}`} rotation="0 180 0"></a-plane>
+                    <a-plane class="static-body" color="black" width={depth} height={doorHeight} rotation="0 90 0" position={`${doorWidth} 0 0`}></a-plane>
+                    <a-plane class="static-body" color="black" width={depth} height={doorHeight} rotation="0 -90 0" position={`0 0 0`}></a-plane>
                 </a-entity>
             </a-entity>
             {/* Door */}

@@ -25,29 +25,55 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Black box of the unknown</title>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-environment-component@1.3.1/dist/aframe-environment-component.min.js"></script>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/aframe-extras@6.1.1/dist/aframe-extras.min.js"></script>
+    <script>
+      window.onload = () => {
+        setTimeout(() => {
+            document.querySelector('#camera').setAttribute('look-controls', '');
+            document.querySelector('#camera').setAttribute('wasd-controls', "acceleration: 200");
+            let staticBodies = document.querySelectorAll('a-box,a-sphere,a-cylinder,a-cone');
+            [].forEach.call(staticBodies, function(staticBody) {
+              staticBody.setAttribute('static-body', '');
+            });
+            staticBodies = document.querySelectorAll('.static-body');
+            [].forEach.call(staticBodies, function(staticBody) {
+              staticBody.setAttribute('static-body', '');
+            });
+          }, 
+          5000
+        );
+      };
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div></div>
-    <a-scene>
+    <a-scene physics="debug: true; gravity: -9.8;">
       <a-assets>
         <a-asset-item id="bed" src="textures/bed/scene.gltf"></a-asset-item>
         <img src="./textures/door.png" id="door" alt="door"></img>
         <img src="textures/door1.png" id="door1" alt="door1" ></img>
-        <img width="1" height="1" src="textures/floor.jpg" id="floor" alt="floor" ></img>
-        <img width="1" height="1" src="textures/wall.jpg" id="wall" alt="wall" ></img>
-        <img width="1" height="1" src="textures/ceiling.jpg" id="ceiling" alt="ceiling" ></img>
-        <img width="1" height="1" src="textures/roof.png" id="roof" alt="roof" ></img>
-        <img width="1" height="1" src="textures/blinds.jpg" id="blinds" alt="blinds" ></img>
+        <img src="textures/floor_resized.jpg" id="floor" alt="floor" ></img>
+        <img src="textures/wall.jpg" id="wall" alt="wall" ></img>
+        <img src="textures/ceiling_resized.jpg" id="ceiling" alt="ceiling" ></img>
+        <img src="textures/roof.png" id="roof" alt="roof" ></img>
+        <img src="textures/blinds_resized.jpg" id="blinds" alt="blinds" ></img>
         <img src='textures/counterWood.jpg' id="counterWood" alt="counterWood" ></img>
         <img src='textures/kitchenTableWood.jpg' id="kitchenTableWood" alt="kitchenTableWood" ></img>
         <img src='textures/blackRubberMat.jpg' id="blackRubberMat" alt="blackRubberMat" ></img>
         <img src='textures/sofa.png' id="sofa" alt="sofa"></img>
         <video id="tv" src="tv.mp4" autoplay="true" onloadstart="this.volume=0.005" loop="true"></video>
       </a-assets>
-      <a-entity id="root"></a-entity>
+      <a-entity position="0 3.2 0">
+        <a-entity kinematic-body id="camera" camera="active: true">
+          <a-cursor></a-cursor>
+        </a-entity>
+      </a-entity>
+      <a-plane static-body rotation="90 0 0" height="1000" width="1000"></a-plane>
+      <a-entity id="root" scale="2 2 2"></a-entity>
     </a-scene>
     <!--
       This HTML file is a template.
