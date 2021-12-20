@@ -1,5 +1,5 @@
 import React from 'react';
-import Walls from '../assets/Walls';
+import Rooms from '../Rooms/Rooms';
 import Roof from '../assets/Roof';
 import LightController from '../objects/LightController';
 import TV from '../assets/TV';
@@ -8,7 +8,7 @@ import KitchenCounter from '../assets/KitchenCounter';
 const Home = (props) => {
     return (
         <a-entity {...props}>
-            <Walls/>
+            <Rooms/>
             <TV position="10 -0.1 19" rotation="0 180 0"/>
             <KitchenCounter position="11 -2 19" rotation="0 180 0" color="black"/>
             <KitchenCounter position="10 -2 19" rotation="0 180 0" color="black"/>
