@@ -27,10 +27,10 @@ if (!window.AFRAME.components["kitchen-sink-component"]) {
 const KitchenSink = ({color, ...props}) => {
     return (
         <a-entity {...props}>
-            <a-box position="-0.5 0.45 0" src="#counterWood" width="0.05" height="0.9" depth="0.8"></a-box>
-            <a-box position="0.5 0.45 0" src="#counterWood" width="0.05" height="0.9" depth="0.8"></a-box>
-            <a-box position="0 0.025 0" src="#counterWood" width="1" height="0.05" depth="0.8"></a-box>
-            <a-box position="0 0.45 0" src="#counterWood" width="1" height="0.05" depth="0.8"></a-box>
+            <a-box position="-0.5 0.45 0" src="#counterWood" width="0.05" height="0.9" depth="0.795"></a-box>
+            <a-box position="0.5 0.45 0" src="#counterWood" width="0.05" height="0.9" depth="0.795"></a-box>
+            <a-box position="0 0.025 0" src="#counterWood" width="1" height="0.05" depth="0.795"></a-box>
+            <a-box position="0 0.45 0" src="#counterWood" width="1" height="0.05" depth="0.795"></a-box>
             <a-box position="0 0.45 -0.375" src="#counterWood" width="1" height="0.9" depth="0.05"></a-box>
 
             <a-entity position="0 0.955 0.025">

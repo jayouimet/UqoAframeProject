@@ -16,10 +16,10 @@ const Garage = (props) => {
                 <Door position={"7 0 -2"} wallWidth={14} wallHeight={4} doorHeight={3} doorWidth={2} depth="0.2" rotation="0 90 0"/>
 
                 <a-entity position="0 -2 0">
-                    <GarageShelf position="-3.5 0 -8.2"/>
-                    <ShelfOfPaint position="0.5 0 -8.2"/>
-                    <ShelfOfPaint position="4.5 0 -8.2"/>
-                    <GarbageBin position="6 0 4.2"/>
+                    <GarageShelf position="-4.1 0 -8.2" scale={"1.3 1.3 1.3"}/>
+                    <ShelfOfPaint position="0.3 0 -8.2" scale={"1.3 1.3 1.3"}/>
+                    <ShelfOfPaint position="4.7 0 -8.2" scale={"1.3 1.3 1.3"}/>
+                    <GarbageBin position="6 0 4.2" scale={"1.3 1.3 1.3"}/>
                     <BlackRubberMat position="5.8 0 -2" rotation="0 90 0"/>
                 </a-entity>
             </a-entity>
