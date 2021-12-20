@@ -3,8 +3,8 @@ import React from 'react';
 const TV = (props) => {
     const tvHandler = (e) => {
         var obj = e.target;
-        obj.setAttribute("opacity",(obj.getAttribute("opacity") == 1 ? 0 : 1));
-        if(obj.getAttribute("opacity") == 1)
+        obj.setAttribute("opacity",(obj.getAttribute("opacity") === "1" ? 0 : 1));
+        if(obj.getAttribute("opacity") === "1")
           document.querySelector(obj.getAttribute("src")).play();
         else
           document.querySelector(obj.getAttribute("src")).pause();

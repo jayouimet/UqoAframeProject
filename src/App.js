@@ -1,14 +1,10 @@
 import './App.css';
 import Camera from './components/assets/Camera';
-import WorkDesk from './components/objects/WorkDesk';
 import Home from './components/objects/Home';
-import GarbageBin from './components/assets/GarbageBin';
 import Cactus from './components/assets/Cactus';
 import Freezer from './components/assets/Freezer';
 import Oven from './components/assets/Oven';
 import KitchenSink from './components/assets/KitchenSink';
-import KitchenTable from './components/assets/KitchenTable';
-import KitchenChair from './components/assets/KitchenChair';
 import BlackRubberMat from './components/assets/BlackRubberMat';
 
 function App() {

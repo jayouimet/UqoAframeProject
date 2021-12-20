@@ -4,7 +4,7 @@ const LightButton = ({groupName,position,rotation}) => {
     const lightControl = (e) => {
         let lights = document.querySelectorAll(`[data-light-group="${groupName}"]`);
         for(var i = 0; i < lights.length;i++)
-            lights[i].setAttribute("intensity",(lights[i].getAttribute("intensity") === 0 ? 0.055 : 0));
+            lights[i].setAttribute("intensity",(lights[i].getAttribute("intensity") === "0" ? 0.02 : 0));
     };
     return (
         <a-entity position={position} rotation={rotation}>
